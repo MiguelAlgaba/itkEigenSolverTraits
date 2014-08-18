@@ -17,4 +17,8 @@ include_directories( BEFORE
   ${CMAKE_SOURCE_DIR}/include
 )
 
+include( CTest )
+
 add_subdirectory( test )
+
+
