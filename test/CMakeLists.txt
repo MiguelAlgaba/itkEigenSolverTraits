@@ -15,7 +15,7 @@ foreach( border 0 1 )
       add_test(NAME itkParameterizationQuadEdgeMeshFilterTest_b${border}_c${coeff}_s${solver}
             COMMAND itkParameterizationQuadEdgeMeshFilterTest
               ${INPUTDATA}/mushroom.vtk ${border} ${coeff} ${solver}
-              ${TEMP}/param_border${border}_coeff${coeff}_solver${solver}.vtk
+              param_border${border}_coeff${coeff}_solver${solver}.vtk
       )
     endforeach( solver )
   endforeach( coeff )
